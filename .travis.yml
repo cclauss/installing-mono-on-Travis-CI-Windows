@@ -29,20 +29,20 @@ matrix:
     #  name: choco install mono --> cmd /c mono --version
     #  # before_script: refreshenv.cmd
     #  script: cmd /c mono --version
-    - install: choco install mono
-      name: choco install mono --> refreshenv.cmd --> cmd //c mono --version
-      before_script: refreshenv.cmd
-      script: cmd //c mono --version
-    - install: choco install mono
-      name: choco install mono --> cmd //c mono --version
-      # before_script: refreshenv.cmd
-      script: cmd //c mono --version
-    - install: choco install mono
-      name: choco install mono --> refreshenv.cmd --> cmd \/c mono --version
-      before_script: refreshenv.cmd
-      script: cmd \/c mono --version
-    - install: choco install mono
-      name: choco install mono --> cmd \/c mono --version
-      # before_script: refreshenv.cmd
-      script: cmd \/c mono --version
+    #- install: choco install mono
+    #  name: choco install mono --> refreshenv.cmd --> cmd //c mono --version
+    #  before_script: refreshenv.cmd
+    #  script: cmd //c mono --version
+    #- install: choco install mono
+    #  name: choco install mono --> cmd //c mono --version
+    #  # before_script: refreshenv.cmd
+    #  script: cmd //c mono --version
+    #- install: choco install mono
+    #  name: choco install mono --> refreshenv.cmd --> cmd \/c mono --version
+    #  before_script: refreshenv.cmd
+    #  script: cmd \/c mono --version
+    #- install: choco install mono
+    #  name: choco install mono --> cmd \/c mono --version
+    #  # before_script: refreshenv.cmd
+    #  script: cmd \/c mono --version
 script: mono --version
