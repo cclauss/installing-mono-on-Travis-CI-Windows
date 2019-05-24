@@ -45,6 +45,12 @@ matrix:
     #  name: choco install mono --> cmd \/c mono --version
     #  # before_script: refreshenv.cmd
     #  script: cmd \/c mono --version
+    - script:
+      - choco install mono
+      - mono --version
+    - script:
+      - choco install mono
+      - refreshenv.cmd
+      - mono --version
 script:
-  - choco install mono
   - mono --version
