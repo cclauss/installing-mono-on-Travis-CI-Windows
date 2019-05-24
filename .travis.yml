@@ -1,0 +1,16 @@
+# https://docs.travis-ci.com/user/reference/windows/
+# https://github.com/chocolatey-community/chocolatey-coreteampackages/pull/1278
+os: windows
+language: c  # "language: csharp" is not yet supported on Travis CI Windows
+matrix:
+  include:
+    - install: choco install mono
+      name: choco install mono --> hardcode $PATH
+      env: PATH="/c/Program Files/Mono/bin:$PATH"
+    - install: choco install mono
+      name: choco install mono --> refreshenv
+      before_script: refreshenv
+    - install: choco install mono
+      name: choco install mono --> refreshenv.cmd
+      before_script: refreshenv.cmd
+script: mono --version
