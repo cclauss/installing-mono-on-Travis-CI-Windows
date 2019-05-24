@@ -13,4 +13,12 @@ matrix:
     - install: choco install mono
       name: choco install mono --> refreshenv.cmd
       before_script: refreshenv.cmd
+    - install: choco install mono
+      name: choco install mono --> refreshenv.cmd --> command mono --version
+      before_script: refreshenv.cmd
+      script: command mono --version
+    - install: choco install mono
+      name: choco install mono --> refreshenv.cmd --> cmd mono --version
+      before_script: refreshenv.cmd
+      script: cmd mono --version
 script: mono --version
