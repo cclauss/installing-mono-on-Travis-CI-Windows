@@ -54,6 +54,6 @@ matrix:
     #  - mono --version
     - script: choco install mono ; refreshenv.cmd ; mono --version
     - script: choco install mono ; mono --version
-    - script: install_mono.bat
+    - script: chmod +x ./install_mono.bat ; ./install_mono.bat
 script:
   - mono --version
