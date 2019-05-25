@@ -1,6 +1,6 @@
 echo %PATH%
 choco install mono
-cmd echo %PATH%
+cmd /c echo %PATH%
 # refreshenv.cmd  # <-- halts the .bat file
 which mono
 which mono
