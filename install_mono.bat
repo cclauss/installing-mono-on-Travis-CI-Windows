@@ -1,6 +1,7 @@
-echo $PATH
+echo "$PATH"
 choco install mono
-echo $PATH
+echo "$PATH"
 refreshenv.cmd
-echo $PATH
+echo "$PATH"
 mono --version
+sleep 1
