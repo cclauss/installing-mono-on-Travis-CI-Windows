@@ -1,6 +1,6 @@
 # installing-mono-on-Travis-CI-Windows
 
-Playground for chocolatey-community/chocolatey-coreteampackages#1278
+Playground for https://github.com/chocolatey-community/chocolatey-coreteampackages/pull/1278
 
 Input:  https://github.com/cclauss/installing-mono-on-Travis-CI-Windows/blob/master/.travis.yml
 
